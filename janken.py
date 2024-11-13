@@ -4,8 +4,7 @@ import janken_judge
 def janken_main():
     player_score = 0
     computer_score = 0
-    cnt = 0
-    for round_num in range(cnt < 4):
+    for round_num in range(1, 4):
         print(f"----- ラウンド {round_num} -----")
         player_hand = player.pon()
         if player_hand == 1:
@@ -25,11 +24,9 @@ def janken_main():
         if result == "勝ち":
             print("あなたの勝ちです！")
             player_score += 1
-            cnt + 1
         elif result == "負け":
             print("コンピュータの勝ちです！")
             computer_score += 1
-            cnt + 1
         else:
             print("あいこでした！もう一回")
 
